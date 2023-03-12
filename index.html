@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS  CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+  <!-- Leaflet JS CDN -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./assets/style/style.css">
+
+  <script src="./assets/js/app.js" defer></script>
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+
+<body>
+
+  <header class="head-content">
+    <div class="container">
+      <h1 class="head-name">IP Address Tracker</h1>
+      <div class="search-content">
+        <input type="search" id="search" class="search-input" placeholder="Search for any IP address or domain">
+        <div class="arrow-icon"> <img src="./assets/images/icon-arrow.svg" alt=""></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main-section container">
+    <div class="search-items">
+      <div class="adress-item item">
+        <p>IP Address</p>
+        <span class="ip-adress"></span>
+      </div>
+      <div class="location-item item">
+        <p>Location</p>
+        <span class="location"></span>
+      </div>
+      <div class="timezone-item item">
+        <p>Timezone</p>
+        <span class="timezone"></span>
+      </div>
+      <div class=" ISP-item item">
+        <p>ISP</p>
+        <span class="isp"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="map-content">
+    <div id="map"></div>
+  </section>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
